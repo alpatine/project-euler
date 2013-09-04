@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /*
- * Project Euler: Problem 2
+ * Project Euler: Problem 2 - Even Fibonacci numbers
  * http://projecteuler.net/problem=2
  *
  * Problem Description:

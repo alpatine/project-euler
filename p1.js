@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /*
- * Project Euler: Problem 1:
+ * Project Euler: Problem 1 - Multiples of 3 and 5
  * http://projecteuler.net/problem=1
  *
  * Problem Description:
