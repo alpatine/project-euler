@@ -10,4 +10,21 @@
  * multiples of 3 or 5 below 1000.
  */
 
+var isAnyMultiple = function(factors, number) {
+    for (var i = 0; i < factors.length; i++)
+        if (number % factors[i] === 0)
+            return true;
+}
+
+var findSumOfMultiples = function(factors, max) {
+    var sum = 0;
+
+    for (var i = 0; i < max; i++)
+        if (isAnyMultiple(factors, i))
+            sum += i;
+
+    return sum;
+}
+
+console.log(findSumOfMultiples([3, 5], 1000));
 
