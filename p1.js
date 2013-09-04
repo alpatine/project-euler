@@ -11,10 +11,13 @@
  */
 
 var isAnyMultiple = function(factors, number) {
-    for (var i = 0; i < factors.length; i++)
-        if (number % factors[i] === 0)
+    for (var i = 0; i < factors.length; i++) {
+        if (number % factors[i] === 0) {
             return true;
-}
+        }
+    }
+    return false;
+};
 
 var findSumOfMultiples = function(factors, max) {
     var sum = 0;
@@ -24,7 +27,7 @@ var findSumOfMultiples = function(factors, max) {
             sum += i;
 
     return sum;
-}
+};
 
 console.log(findSumOfMultiples([3, 5], 1000));
 
