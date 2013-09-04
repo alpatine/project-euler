@@ -15,26 +15,34 @@ var calculatePrimesTo = function(max) {
     var isPrime = [];
     var primes = [];
 
-    for (var i = 2; i <= max; i++)
+    for (var i = 2; i <= max; i++) {
         isPrime[i] = true;
+    }
 
-    for (var i = 2; i*i <= max; i++)
-        if (isPrime[i])
-            for (var j = i; i*j <= max; j++)
+    for (var i = 2; i*i <= max; i++) {
+        if (isPrime[i]) {
+            for (var j = i; i*j <= max; j++) {
                 isPrime[i*j] = false;
+            }
+        }
+    }
 
-    for (var i = 2; i <= max; i++)
-        if (isPrime[i])
+    for (var i = 2; i <= max; i++) {
+        if (isPrime[i]) {
             primes.push(i);
+        }
+    }
 
     return primes;
 };
 
 var highestPrimeFactor = function(n) {
     var primes = calculatePrimesTo(Math.sqrt(n));
-    for (var i = primes.length - 1; i >= 0; i--)
-        if (n % primes[i] === 0)
+    for (var i = primes.length - 1; i >= 0; i--) {
+        if (n % primes[i] === 0) {
             return primes[i];
+        }
+    }
 
     return n;
 };

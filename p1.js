@@ -22,9 +22,11 @@ var isAnyMultiple = function(factors, number) {
 var findSumOfMultiples = function(factors, max) {
     var sum = 0;
 
-    for (var i = 0; i < max; i++)
-        if (isAnyMultiple(factors, i))
+    for (var i = 0; i < max; i++) {
+        if (isAnyMultiple(factors, i)) {
             sum += i;
+        }
+    }
 
     return sum;
 };

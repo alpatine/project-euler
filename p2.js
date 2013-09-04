@@ -23,17 +23,20 @@ var isEven = function(n) {
 
 var sum = function(array) {
     var total = 0;
-    for (var i = 0; i < array.length; i++)
+    for (var i = 0; i < array.length; i++) {
         total += array[i];
+    }
 
     return total;
 };
 
 var evenFibonacciSum = function(max) {
     var fibonacciNumbers = [];
-    for (var fibValue, n = 2; (fibValue = fibonacci(n)) <= max; n++)
-        if (isEven(fibValue))
+    for (var fibValue, n = 2; (fibValue = fibonacci(n)) <= max; n++) {
+        if (isEven(fibValue)) {
             fibonacciNumbers.push(fibValue);
+        }
+    }
 
     return sum(fibonacciNumbers);
 };
