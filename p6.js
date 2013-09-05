@@ -14,10 +14,12 @@
  *
  */
 
+// Closed form sum of natural numbers: 1 + 2 + ... + n
 var sumNaturalTo = function(n) {
     return (n + 1) / 2 * n;
 };
 
+// Closed form sum of square numbers: 1^2 + 2^2 + ... + n^2
 var sumSquaresTo = function(n) {
     return (2 * n + 1) / 6 * (n + 1) * n;
 };
