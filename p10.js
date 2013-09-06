@@ -39,6 +39,6 @@ var sumPrimesTo = function(n) {
     return primes.reduce(function(a, b) {
         return a + b;
     });
-}
+};
 
 console.log(sumPrimesTo(1999999));
