@@ -1,4 +1,4 @@
 project-euler
 =============
 
-Holds js solutions to problems on projecteuler.net
+JavaScript solutions to the problems on projecteuler.net
